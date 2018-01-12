@@ -1,0 +1,8 @@
+@import './styles/constants';
+
+.App {
+  min-height: 100vh;
+  background: $_BLACK;
+  display: flex;
+  flex-direction: column;
+}

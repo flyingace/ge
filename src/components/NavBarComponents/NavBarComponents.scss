@@ -1,0 +1,40 @@
+@import '../../styles/constants';
+
+.brandIcon {
+  max-height: 40px;
+}
+
+.navBarTab {
+  height: 40px;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 40px;
+  color: $_LTGRAY;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    color: $_WHITE;
+  }
+
+  &.selected {
+    color: $_WHITE;
+    background-color: $_DKGRAY;
+  }
+}
+
+.navBarLink {
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 40px;
+  color: $_LTGRAY;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:after {
+    content: '|'
+  }
+}

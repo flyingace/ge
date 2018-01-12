@@ -1,0 +1,18 @@
+{
+  "name": "ge",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "flyingace <dc@davidcameron.biz>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

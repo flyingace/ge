@@ -1,0 +1,15 @@
+{
+  "logo": "/src/assets/ge_logo.jpg",
+  "tabs": [
+    "library",
+    "galleries",
+    "manage",
+    "workflow",
+    "admin"
+  ],
+  "links": [
+    "David Cameron",
+    "Support",
+    "Log Out"
+  ]
+}
