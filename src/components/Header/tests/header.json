@@ -1,5 +1,6 @@
 {
   "logo": "/src/assets/ge_logo.jpg",
+  "selected_tab": "library",
   "tabs": [
     "library",
     "galleries",

@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './NavBarTabSet.scss';
+import {forEach} from 'lodash';
+import {NavBarTab} from "../NavBarComponents/NavBarComponents";
 
 class NavBarTabSet extends React.Component {
     constructor() {
@@ -8,7 +10,8 @@ class NavBarTabSet extends React.Component {
     }
 
     static propTypes = {
-        'selected': PropTypes.string,
+        'selectedTab': PropTypes.string,
+        'selectTab': PropTypes.func,
         'tabs': PropTypes.array
     };
 
@@ -16,15 +19,17 @@ class NavBarTabSet extends React.Component {
 
     state = {};
 
-    renderTabs = () => {
-        console.log(this.props.tabs);
-        return <div>Hi</div>;
+    renderTabs = (tabLabels) => {
+        return tabLabels.map((tabLabel) => {
+            const tabSelected = (tabLabel === this.props.selectedTab) ? 'selected' : '';
+            return <NavBarTab label={tabLabel} isSelected={tabSelected} selectTab={this.props.selectTab} key={tabLabel}/>;
+        });
     };
 
     render() {
         return (
             <div className='NavBarTabSet'>
-                {this.renderTabs()}
+                {this.renderTabs(this.props.tabs)}
             </div>
         );
     }

@@ -4,14 +4,16 @@ import './NavBarComponents.scss';
 export const BrandIcon = (props) => {
 
     return (
-        <img className='brandIcon' src={props.source}/>
+        <div className='brandIcon'>
+            <img src={props.source}/>
+        </div>
     )
 };
 
 export const NavBarTab = (props) => {
 
     return (
-        <div className='navBarTab' id={props.label}>
+        <div className={'navBarTab ' + props.isSelected} id={props.label} onClick={props.selectTab}>
             {props.label}
         </div>
     )

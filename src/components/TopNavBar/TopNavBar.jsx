@@ -15,7 +15,9 @@ class TopNavBar extends React.Component {
     static propTypes = {
         logo: PropTypes.string,
         tabs: PropTypes.array,
-        links: PropTypes.array
+        links: PropTypes.array,
+        selected_tab: PropTypes.string,
+        selectTab: PropTypes.func
     };
 
     static defaultProps = {};
@@ -23,12 +25,12 @@ class TopNavBar extends React.Component {
     state = {};
 
     render() {
-        const {tabs, links} = this.props;
+        const {logo, tabs, links, selected_tab, selectTab} = this.props;
         return (
             <div className='TopNavBar'>
-                <BrandIcon source={this.props.logo}/>
-                <NavBarTabSet tabs={tabs}/>
-                <SearchField />
+                <BrandIcon source={logo}/>
+                <NavBarTabSet tabs={tabs} selectedTab={selected_tab} selectTab={selectTab}/>
+                <SearchField/>
                 <NavBarLinkSet links={links}/>
             </div>
         );

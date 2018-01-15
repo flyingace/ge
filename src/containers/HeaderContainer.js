@@ -7,7 +7,8 @@ function mapStateToProps(state) {
     return {
         logo: state.headerReducer.logo,
         tabs: state.headerReducer.tabs,
-        links: state.headerReducer.links
+        links: state.headerReducer.links,
+        selected_tab: state.headerReducer.selected_tab
     };
 }
 
