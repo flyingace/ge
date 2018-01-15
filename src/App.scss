@@ -1,8 +1,9 @@
-@import './styles/constants';
+@import './styles/base';
 
 .App {
   min-height: 100vh;
   background: $_BLACK;
   display: flex;
   flex-direction: column;
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
 }

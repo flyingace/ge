@@ -1,17 +1,20 @@
-@import '../../styles/constants';
+@import '../../styles/base';
 
 .brandIcon {
   max-height: 40px;
+  width: 230px;
+  float: left;
 }
 
 .navBarTab {
   height: 40px;
-  padding: 0 10px;
-  font-size: 14px;
+  padding: 0 20px;
+  font-size: 12px;
   line-height: 40px;
   color: $_LTGRAY;
   text-transform: uppercase;
   cursor: pointer;
+  float: left;
 
   &:hover {
     color: $_WHITE;
